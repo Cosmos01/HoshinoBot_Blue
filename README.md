@@ -35,7 +35,7 @@ HoshinoBot_Blue 的功能开发以服务 [碧蓝档案](http://bluearchive.jp) �
 
 - **掷骰子**
 - **反馈发送**：反馈内容将由bot私聊发送给维护组
-
+</details>
 
 -------------
 
