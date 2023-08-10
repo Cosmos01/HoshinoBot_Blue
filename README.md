@@ -1,21 +1,14 @@
 # HoshinoBot
 
-专为碧蓝档案整理的纯净版HoshinoBot  
-
 [![License](https://img.shields.io/github/license/Ice9Coffee/HoshinoBot)](LICENSE)
 ![Python Version](https://img.shields.io/badge/python-3.8+-blue)
 ![Nonebot Version](https://img.shields.io/badge/nonebot-1.6.0%2B%2C%202.0.0---blue)
 
+
+专为碧蓝档案整理的纯净版HoshinoBot  
+
 A QQ-bot for Blue Archive based on [Nonebot](https://github.com/nonebot/nonebot)
 
-<details>
-  <summary>开发历史</summary>
-
-- 2019.09.20 HoshinoBot诞生
-- ... (待补充)
-- 2020年8月2日0点，CoolQ框架停止维护。HoshinoBot改用gocqhttp作为无头QQ客户端。
-
-</details>
 
 
 ## 简介
@@ -23,63 +16,26 @@ A QQ-bot for Blue Archive based on [Nonebot](https://github.com/nonebot/nonebot)
 **HoshinoBot:** 基于 [nonebot](https://docs.nonebot.dev/) 的开源Q群bot框架。
 
 
-## 更新公告
-- 2023.04: 支持Twitter API v2。使用前请按照[指引](https://github.com/Ice9Coffee/HoshinoBot/pull/271#issuecomment-1505584958)升级框架。由于Twitter API政策仍在频繁调整，不保证未来的可用性。感谢贡献者[@othinus001](https://github.com/othinus001)！
-
 ## 功能介绍
 
-HoshinoBot 的功能开发以服务 [公主连结☆Re:Dive](http://priconne-redive.jp) 玩家为核心。
+HoshinoBot_Blue 的功能开发以服务 [碧蓝档案](http://bluearchive.jp) 玩家为核心。
 
 <details>
   <summary>主要功能</summary>
 
 - **转蛋模拟**：单抽、十连、抽一井
-- **竞技场解法查询**：支持按服务器过滤，支持反馈点赞点踩
-- **竞技场结算提醒**
-- **公会战管理**：详细说明见[此文档](hoshino/modules/pcrclanbattle/clanbattle/README.md)
-- **Rank推荐表搬运**
-- **常用网址速查**
-- **官方推特转发**
-- **官方四格推送**
-- **角色别称转换**
-- **切噜语编解码**：切噜～♪
-- **竞技场余矿查询**
+- **……**
 
-> 由于bot的功能会快速迭代开发，使用方式这里不进行具体的说明，请向bot发送"help"或移步[此文件](hoshino/modules/botmanage/help.py)查看详细。会战管理功能的详细说明，请[点击这里](hoshino/modules/pcrclanbattle/clanbattle/README.md)
+> 由于bot的功能会快速迭代开发，使用方式这里不进行具体的说明，请向bot发送"help"或移步[此文件](hoshino/modules/botmanage/help.py)查看详细。
 
 </details>
 
 <details>
   <summary>通用功能</summary>
 
-- **[蜜柑计划](http://mikanani.me)番剧更新订阅**
-- **入群欢迎**&**退群提醒**
-- **复读**
 - **掷骰子**
-- **精致睡眠套餐**
-- **机器翻译**
 - **反馈发送**：反馈内容将由bot私聊发送给维护组
 
-</details>
-
-此外，HoshinoBot 为 [艦隊これくしょん](http://www.dmm.com/netgame/feature/kancolle.html) 玩家开发了以下功能
-
-<details>
-  <summary>点击展开</summary>
-
-- **官推转发**：「艦これ」開発/運営 & C2機関
-- **时报**
-- **演习时间提醒**
-- **月度远征提醒**
-- **舰娘信息查询**：`*晓改二`
-- **装备信息查询**：`*震电改`
-- **战果人事表查询**：`人事表191201`
-
-> 艦これ相关功能由于个人精力实在有限，无法进行更多功能（如海图攻略）的开发/维护。
->
-> 如果您有新的想法，欢迎联系我！即便您不会编程，您也可以在内容更新上帮到我们！
-
-</details>
 
 -------------
 
@@ -94,8 +50,6 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 
 ## 如何开始使用
-
-QQ群[![试用/赞助群](https://img.shields.io/badge/试用/赞助-Hoshinoのお茶会-brightgreen)](https://jq.qq.com/?_wv=1027&k=eYGgrL4A)提供了我们部署的bot，提供Hoshino的原生服务。您可以在这里试用bot功能、赞助开发者，赞助者可邀请bot加入自己的群使用。
 
 如果您具备基本的linux与python能力，并拥有一台服务器（轻量级即可），您可以参阅部署指南自行部署。
 
@@ -119,7 +73,6 @@ QQ群[![试用/赞助群](https://img.shields.io/badge/试用/赞助-Hoshinoの�
   <summary>（点击查看社区提供的部署指南）</summary>
 > CentOS已停止更新，推荐使用Ubuntu 20.04或Debian。
 
-
 - 《[使用 Docker 部署 HoshinoBot 与 yobot](https://cn.pcrbot.com/depoly-with-docker/)》作者：[yuudi](https://github.com/yuudi)
 
 </details>
@@ -131,7 +84,7 @@ QQ群[![试用/赞助群](https://img.shields.io/badge/试用/赞助-Hoshinoの�
 #### Windows 部署
 
 1. 安装下面的软件/工具
-    - Python 3.8：https://www.python.org/downloads/windows/
+    - Python 3.10：https://www.python.org/downloads/windows/
     - Git：https://git-scm.com/download/win
     - Notepad++：https://notepad-plus-plus.org/downloads/
 
@@ -152,39 +105,29 @@ QQ群[![试用/赞助群](https://img.shields.io/badge/试用/赞助-Hoshinoの�
 
     > 如果您不清楚某项设置的作用，请保持默认。
 
-5. 回到powershell，输入以下命令，启动 HoshinoBot
+5. 双击run.bat或回到powershell输入以下命令，启动 HoshinoBot
 
     ```powershell
     py -3.8 run.py
     ```
 
-    > 若能看到日志`INFO: Running on 127.0.0.1:8080`，说明HoshinoBot启动成功。您可以忽略启动时的WARNING信息。如果出现ERROR，说明部分功能可能加载失败。
+    > 若能看到日志`INFO: Running on 127.0.0.1:9090`，说明HoshinoBot启动成功。您可以忽略启动时的WARNING信息。如果出现ERROR，说明部分功能可能加载失败。
 
     至此，HoshinoBot的“大脑”已部署成功。接下来我们需要部署无头qq客户端，作为HoshinoBot的“口”和“耳”，收发消息。
 
-6. 下载 go-cqhttp 至合适的文件夹
+6. 下载 go-cqhttp (推荐使用dev版本)至合适的文件夹
 
     - github 发布页：https://github.com/Mrs4s/go-cqhttp/releases
+    - go-cqhttp dev版本(选个左边绿勾中间蓝字是dev的点进去就可以下了)：https://github.com/Mrs4s/go-cqhttp/actions/workflows/ci.yml
 
-    > 您需要根据自己的机器架构选择版本，Windows一般为x86/64架构，通常选择[go-cqhttp_windows_386.exe](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.0.0-rc1/go-cqhttp_windows_386.exe)
+    > 您需要根据自己的机器架构选择版本，通常选择AMD64版本，
 
-7. 在同文件夹内创建一个文本文件，重命名为`config.yml`，将以下内容写入文件：
-
+7. 启动go-cqhttp，选择反向 Websocket 通信，然后到生成的config.yml中修改配置：
+    拉到最底下，将`servers:`下的内容替换为以下内容
     ```yaml
-    account:
-      uin: 你的机器人QQ号
-      password: '' # 密码为空时使用扫码登录
-      encrypt: false  # 是否开启密码加密
-    heartbeat:
-      interval: 5
-    default-middlewares: &default
-      access-token: ''
-    database:
-      leveldb:
-        enable: true
     servers:
       - ws-reverse:
-          universal: ws://127.0.0.1:8080/ws/
+          universal: ws://127.0.0.1:9090/ws/
           reconnect-interval: 5000
           middlewares:
             <<: *default
@@ -246,20 +189,10 @@ QQ群[![试用/赞助群](https://img.shields.io/badge/试用/赞助-Hoshinoの�
 
     > 您需要根据自己的机器架构选择版本，一般x86/64的Linux选择[go-cqhttp_linux_386.tar.gz](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.0.0-rc1/go-cqhttp_linux_386.tar.gz)
 
-6. 解压后，在`go-cqhttp`的同目录下创建配置文件`config.yml`，将以下内容写入文件：
+6. 启动go-cqhttp，选择反向 Websocket 通信，然后到生成的config.yml中修改配置：
+    拉到最底下，将`servers:`下的内容替换为以下内容
 
     ```yaml
-    account:
-      uin: 你的机器人QQ号
-      password: '' # 密码为空时使用扫码登录
-      encrypt: false  # 是否开启密码加密
-    heartbeat:
-      interval: 5
-    default-middlewares: &default
-      access-token: ''
-    database:
-      leveldb:
-        enable: true
     servers:
       - ws-reverse:
           universal: ws://127.0.0.1:8080/ws/
@@ -288,85 +221,8 @@ QQ群[![试用/赞助群](https://img.shields.io/badge/试用/赞助-Hoshinoの�
 
 #### 静态图片资源
 
-您可能希望看到更为精致的图片版结果，若希望机器人能够发送图片，需要准备静态图片资源，其中包括：
-
-- 公主连接官方四格漫画
-- 公主连接每月rank推荐表
-- 表情包杂图
-- setu库
-- [是谁呼叫舰队](http://fleet.diablohu.com/)舰娘&装备页面截图
-
-等资源。自行收集可能较为困难，所以我们准备了一个较为精简的资源包以及下载脚本，可以满足公主连接相关功能的日常使用。如果需要，请加入QQ群 **Hoshino的后花园** 761100284，下载群文件中的`res.zip`。
 
 
 
-#### pcrdfans授权key
 
-竞技场查询功能的数据来自 [公主连结Re: Dive Fan Club - 硬核的竞技场数据分析站](https://pcrdfans.com/) ，查询需要授权key。您可以向pcrdfans的作者索要。（注：由于最近机器人搭建者较多，pcrdfans的作者最近常被打扰，我们**不建议**您因本项目而去联系他，推荐您前往网站[pcrdfans.com](https://pcrdfans.com)进行查询）
-
-若您已有授权key，在文件`hoshino/config/priconne.py`中填写您的key：
-
-```python
-class arena:
-    AUTH_KEY = "your_key"
-```
-
-
-
-#### 蜜柑番剧 RSS Token
-
-> 请先在`hoshino/config/__bot__.py`的`MODULES_ON`中取消`mikan`的注释  
-> 本功能默认关闭，在群内发送 "启用 bangumi" 即可开启
-
-番剧订阅数据来自[蜜柑计划 - Mikan Project](https://mikanani.me/)，您可以注册一个账号，添加订阅的番剧，之后点击Mikan首页的RSS订阅，复制类似于下面的url地址：
-
-```
-https://mikanani.me/RSS/MyBangumi?token=abcdfegABCFEFG%2b123%3d%3d
-```
-
-保留其中的`token`参数，在文件`hoshino/config/mikan.py`中填写您的token：
-
-```python
-MIKAN_TOKEN = "abcdfegABCFEFG+123=="
-```
-
-注意：`token`中可能含有url转义，您需要将`%2b`替换为`+`，将`%2f`替换为`/`，将`%3d`替换为`=`。
-
-
-
-#### 时报文本
-
-> 请先在`hoshino/config/__bot__.py`的`MODULES_ON`中取消`hourcall`的注释  
-> 本功能默认关闭，在群内发送 "启用 hourcall" 即可开启
-
-报时功能使用/魔改了艦これ中各个艦娘的报时语音，您可以在[舰娘百科](https://zh.kcwiki.org/wiki/舰娘百科)或[艦これ 攻略 Wiki](https://wikiwiki.jp/kancolle/)找到相应的文本/翻译，当然您也可以自行编写台词。在此，我们向原台词作者[田中](https://nga.178.com/read.php?tid=9143913)[谦介](https://nga.178.com/read.php?tid=14045507)先生和他杰出的游戏作品表达诚挚的感谢！
-
-若您已获取时报文本，在文件`hoshino/config/hourcall.py`中填写您的文本。
-
-您可以编入多组报时文本，机器人会按`HOUR_CALLS_ON`中定义的顺序循环日替。
-
-
-
-#### 推特转发
-
-推特转发功能需要推特开发者账号，具体申请方法请自行[Google](http://google.com)。注：现在推特官方大概率拒绝来自中国大陆的新申请，自备海外手机号及大学邮箱可能会帮到您。
-
-若您已有推特开发者账号，在文件`hoshino/config/twitter.py`中填写您的key：
-
-```python
-consumer_key = "your_consumer_key",
-consumer_secret = "your_consumer_secret",
-access_token_key = "your_access_token_key",
-access_token_secret = "your_access_token_secret"
-```
-
-
-
-## 友情链接
-
-**干炸里脊资源站**: https://redive.estertion.win/
-
-**公主连结Re: Dive Fan Club - 硬核的竞技场数据分析站**: https://pcrdfans.com/
-
-**yobot**: https://yobot.win/
 
