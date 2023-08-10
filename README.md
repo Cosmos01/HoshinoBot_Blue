@@ -3,12 +3,7 @@
 ![Python Version](https://img.shields.io/badge/python-3.8+-blue)
 ![Nonebot Version](https://img.shields.io/badge/nonebot-1.6.0%2B%2C%202.0.0---blue)
 
-[![试用/赞助群](https://img.shields.io/badge/试用/赞助-Hoshinoのお茶会-brightgreen)](https://jq.qq.com/?_wv=1027&k=eYGgrL4A)
-[![开发交流群](https://img.shields.io/badge/开发交流-Hoshinoの4番灵装-brightgreen)](https://jq.qq.com/?_wv=1027&k=6zyqKSqT)
-[![防炸群备胎](https://img.shields.io/badge/开发交流-Hoshinoの5番灵装-brightgreen)](https://jq.qq.com/?_wv=1027&k=WYcls71E)
-[![Telegram](https://img.shields.io/badge/Telegram-后花园国际部-blue)](https://t.me/+u2Sv4sS-8CEwZjc1)
-
-A QQ-bot for Princess Connect Re:Dive based on [Nonebot](https://github.com/nonebot/nonebot)
+A QQ-bot for Blue Archive based on [Nonebot](https://github.com/nonebot/nonebot)
 
 <details>
   <summary>开发历史</summary>
