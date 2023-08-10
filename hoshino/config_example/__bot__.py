@@ -35,5 +35,5 @@ RES_URL = 'http://127.0.0.1:5000/static/'
 MODULES_ON = {
     'botmanage',
     'dice',
-    'groupmaster',
+    'groupmaster'
 }
