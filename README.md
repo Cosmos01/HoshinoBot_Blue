@@ -23,8 +23,8 @@ HoshinoBot_Blue 的功能开发以服务 [碧蓝档案](http://bluearchive.jp) �
 <details>
   <summary>主要功能</summary>
 
-- **转蛋模拟**：单抽、十连、抽一井
-- **……**
+- **碧蓝档案**：[使用说明](https://github.com/Cosmos01/Blue_Archive_HoshinoBot#%E6%8C%87%E4%BB%A4%E5%88%97%E8%A1%A8)
+- **B博转发**：[使用说明](https://github.com/kushidou/bili-notice-hoshino#%E4%BD%BF%E7%94%A8)
 
 > 由于bot的功能会快速迭代开发，使用方式这里不进行具体的说明，请向bot发送"help"或移步[此文件](hoshino/modules/botmanage/help.py)查看详细。
 
@@ -33,8 +33,7 @@ HoshinoBot_Blue 的功能开发以服务 [碧蓝档案](http://bluearchive.jp) �
 <details>
   <summary>通用功能</summary>
 
-- **掷骰子**
-- **反馈发送**：反馈内容将由bot私聊发送给维护组
+- **掷骰子**：`.rd`
 </details>
 
 -------------
@@ -64,18 +63,6 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 最终解释权归HoshinoBot开发组所有。
 
 
-
-## 部署指南
-
-**HoshinoBot基于OneBot协议通信，使用[go-cqhttp](https://github.com/Mrs4s/go-cqhttp)或[CQHTTP Mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)作为无头QQ客户端。**
-
-<details>
-  <summary>（点击查看社区提供的部署指南）</summary>
-> CentOS已停止更新，推荐使用Ubuntu 20.04或Debian。
-
-- 《[使用 Docker 部署 HoshinoBot 与 yobot](https://cn.pcrbot.com/depoly-with-docker/)》作者：[yuudi](https://github.com/yuudi)
-
-</details>
 
 
 ### 部署步骤
