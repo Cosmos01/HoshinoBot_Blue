@@ -77,16 +77,17 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 </details>
 
-本bot功能繁多，部分功能需要静态图片资源和带有认证的api key，恕不能公开。本指南将首先带领您搭建具有**模拟抽卡(纯文字版)**、**会战管理v2**功能的HoshinoBot。其他功能需额外配置，请参考本章**更进一步**的对应小节。适用于日台服的**会战管理v3及v4版本**暂未开源，如有需要请前往[![试用/赞助群](https://img.shields.io/badge/试用/赞助-Hoshinoのお茶会-brightgreen)](https://jq.qq.com/?_wv=1027&k=eYGgrL4A)。
 
 ### 部署步骤
 
 #### Windows 部署
 
 1. 安装下面的软件/工具
-    - Python 3.10：https://www.python.org/downloads/windows/
+    - [Python](https://www.python.org/downloads/windows/) 3.8(安装时必需勾选add python 3.8 to path)：https://www.python.org/downloads/release/python-3810/
     - Git：https://git-scm.com/download/win
     - Notepad++：https://notepad-plus-plus.org/downloads/
+      
+如果安装了python 3.10，需要把requirements.txt中的`matplotlib~=3.2.1`改为`matplotlib~=3.5.2`
 
 2. 打开一个合适的文件夹，点击资源管理器左上角的 `文件 -> 打开Windows Powershell`
 
@@ -101,11 +102,11 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
     >
     >若安装python依赖库时下载速度缓慢，可以尝试使用`py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt`
 
-4. 回到资源管理器，进入`hoshino`文件夹，将`config_example`文件夹复制一份，重命名为`config`，然后右键使用Notepad++打开其中的`__bot__.py`，按照其中的注释说明进行编辑。
+4. 回到资源管理器，进入`hoshino\config`文件夹，然后右键使用Notepad++打开其中的`__bot__.py`，按照其中的注释说明进行编辑。
 
-    > 如果您不清楚某项设置的作用，请保持默认。
+    > 如果您不清楚某项设置的作用，请保持默认。基本上把SUPERUSERS里面改成自己的qq号就行了。
 
-5. 双击run.bat或回到powershell输入以下命令，启动 HoshinoBot
+5. 回到powershell输入以下命令或直接双击打开run.bat，启动 HoshinoBot
 
     ```powershell
     py -3.8 run.py
@@ -169,7 +170,6 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 3. 编辑配置文件
     ```bash
-    mv hoshino/config_example hoshino/config
     nano hoshino/config/__bot__.py
     ```
     > 配置文件内有相应注释，请根据您的实际配置填写，HoshinoBot仅支持反向ws通信
@@ -195,7 +195,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
     ```yaml
     servers:
       - ws-reverse:
-          universal: ws://127.0.0.1:8080/ws/
+          universal: ws://127.0.0.1:9090/ws/
           reconnect-interval: 5000
           middlewares:
             <<: *default
