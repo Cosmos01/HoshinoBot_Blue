@@ -92,7 +92,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 3. 解压后进入HoshinoBot_Blue，点击资源管理器左上角的 `文件 -> 打开Windows Powershell`，输入以下命令克隆本仓库并安装依赖
     ```powershell
-     py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt`
+    py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt`
     ```
     >若此处有报错信息，请务必解决，将错误信息复制到百度搜索一般即可找到解决办法。  
 
@@ -103,7 +103,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
      可以直接双击update.bat
      或是在hoshino\modules\Blue_Archive_HoshinoBot文件夹下打开Windows Powershell输入以下命令
      ```powershell
-       git pull
+     git pull
      ```
 6. 回到powershell输入以下命令或直接双击打开run.bat，启动 HoshinoBot
 
