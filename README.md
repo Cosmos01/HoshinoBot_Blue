@@ -5,11 +5,11 @@
 ![Nonebot Version](https://img.shields.io/badge/nonebot-1.6.0%2B%2C%202.0.0---blue)
 
 
-专为碧蓝档案整理的纯净版HoshinoBot，不要clone本项目，移步[Release](https://github.com/Cosmos01/HoshinoBot_Blue/releases/tag/release)下载整合包    
+专为碧蓝档案整理的纯净版HoshinoBot  
 
 A QQ-bot for Blue Archive based on [Nonebot](https://github.com/nonebot/nonebot)
 
-
+不要clone本项目，移步[Release](https://github.com/Cosmos01/HoshinoBot_Blue/releases/tag/release)下载整合包
 
 ## 简介
 
@@ -52,7 +52,18 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 如果您具备基本的linux与python能力，并拥有一台服务器（轻量级即可），您可以参阅部署指南自行部署。
 
+部署完成后在群聊对bot发送以下命令开启对应功能：
+- `启用 ba_calendar`
+- （日服可选）`启用 ba_twitter`
+- `ba(日,国,国际,en日,db日,db国际)服日历 on`
+- `ba更新卡池`
+- `@bot关注+up主名字或uid`，推荐关注列表如下
 
+1. 夜猫咪喵喵猫(425535005)
+2. 威威字幕君(7045822)
+3. 碧蓝档案情报站(436037759)
+4. 蔚蓝档案(3493265644980448)
+  
 ## 开源协议及免责声明
 
 本项目遵守GPL-3.0协议开源，请在协议允许的条件及范围内使用本项目。本项目的开发者不会强制向您索要任何费用，同时也不会提供任何质保，一切因本项目引起的法律、利益纠纷由与本项目的开发者无关。
