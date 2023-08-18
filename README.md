@@ -10,7 +10,7 @@
 A QQ-bot for Blue Archive based on [Nonebot](https://github.com/nonebot/nonebot)
 
 不要clone本项目，移步[Release](https://github.com/Cosmos01/HoshinoBot_Blue/releases/tag/release)下载整合包  
-本项目不提供技术支持，遇到问题请自行解决  
+本项目不提供go-cqhttp的技术支持，遇到问题请自行解决  
 
 ## 简介
 
