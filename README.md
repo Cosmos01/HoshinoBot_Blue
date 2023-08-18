@@ -1,11 +1,11 @@
 # HoshinoBot Blue
-# 整理中  
+
 [![License](https://img.shields.io/github/license/Ice9Coffee/HoshinoBot)](LICENSE)
 ![Python Version](https://img.shields.io/badge/python-3.8+-blue)
 ![Nonebot Version](https://img.shields.io/badge/nonebot-1.6.0%2B%2C%202.0.0---blue)
 
 
-专为碧蓝档案整理的纯净版HoshinoBot  
+专为碧蓝档案整理的纯净版HoshinoBot，不要clone本项目，移步[Release](https://github.com/Cosmos01/HoshinoBot_Blue/releases/tag/release)下载整合包    
 
 A QQ-bot for Blue Archive based on [Nonebot](https://github.com/nonebot/nonebot)
 
