@@ -83,9 +83,8 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 1. 安装下面的软件/工具
     - [Python](https://www.python.org/downloads/windows/) 3.8(安装时必需勾选add python 3.8 to path)：https://www.python.org/downloads/release/python-3810/
-    - Git：https://git-scm.com/download/win
-      
-如果安装了python 3.10，需要把requirements.txt中的`matplotlib~=3.2.1`改为`matplotlib~=3.5.2`，下面命令中的3.8也得改成3.10  
+    - Git：https://git-scm.com/download/win    
+    >如果安装了python 3.10，需要把requirements.txt中的`matplotlib~=3.2.1`改为`matplotlib~=3.5.2`，下面命令中的3.8也得改成3.10  
 
 2. 下载整合包：https://github.com/Cosmos01/HoshinoBot_Blue/releases/download/release/HoshinoBot_Blue.zip
 
