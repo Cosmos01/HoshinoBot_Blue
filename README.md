@@ -85,28 +85,27 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 1. 安装下面的软件/工具
     - [Python](https://www.python.org/downloads/windows/) 3.8(安装时必需勾选add python 3.8 to path)：https://www.python.org/downloads/release/python-3810/
     - Git：https://git-scm.com/download/win
-    - Notepad++：https://notepad-plus-plus.org/downloads/
       
-如果安装了python 3.10，需要把requirements.txt中的`matplotlib~=3.2.1`改为`matplotlib~=3.5.2`
+如果安装了python 3.10，需要把requirements.txt中的`matplotlib~=3.2.1`改为`matplotlib~=3.5.2`，下面命令中的3.8也得改成3.10  
 
-2. 打开一个合适的文件夹，点击资源管理器左上角的 `文件 -> 打开Windows Powershell`
+2. 下载整合包：https://github.com/Cosmos01/HoshinoBot_Blue/releases/download/release/HoshinoBot_Blue.zip
 
-3. 输入以下命令克隆本仓库并安装依赖
-
+3. 解压后进入HoshinoBot_Blue，点击资源管理器左上角的 `文件 -> 打开Windows Powershell`，输入以下命令克隆本仓库并安装依赖
     ```powershell
-    git clone https://github.com/Ice9Coffee/HoshinoBot.git
-    cd HoshinoBot
-    py -3.8 -m pip install -r requirements.txt
+     py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt`
     ```
     >若此处有报错信息，请务必解决，将错误信息复制到百度搜索一般即可找到解决办法。  
-    >
-    >若安装python依赖库时下载速度缓慢，可以尝试使用`py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt`
 
-4. 回到资源管理器，进入`hoshino\config`文件夹，然后右键使用Notepad++打开其中的`__bot__.py`，按照其中的注释说明进行编辑。
+4. 回到资源管理器，进入`hoshino\config`文件夹，然后右键使用Edit with IDLE打开其中的`__bot__.py`，按照其中的注释说明进行编辑。
 
     > 如果您不清楚某项设置的作用，请保持默认。基本上把SUPERUSERS里面改成自己的qq号就行了。
-
-5. 回到powershell输入以下命令或直接双击打开run.bat，启动 HoshinoBot
+5. 更新插件版本
+     可以直接双击update.bat
+     或是在hoshino\modules\Blue_Archive_HoshinoBot文件夹下打开Windows Powershell输入以下命令
+     ```powershell
+       git pull
+     ```
+6. 回到powershell输入以下命令或直接双击打开run.bat，启动 HoshinoBot
 
     ```powershell
     py -3.8 run.py
@@ -116,14 +115,14 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
     至此，HoshinoBot的“大脑”已部署成功。接下来我们需要部署无头qq客户端，作为HoshinoBot的“口”和“耳”，收发消息。
 
-6. 下载 go-cqhttp (推荐使用dev版本)至合适的文件夹
+7. 下载 go-cqhttp (推荐使用dev版本)至合适的文件夹
 
     - github 发布页：https://github.com/Mrs4s/go-cqhttp/releases
     - go-cqhttp dev版本(选个左边绿勾中间蓝字是dev的点进去就可以下了)：https://github.com/Mrs4s/go-cqhttp/actions/workflows/ci.yml
 
     > 您需要根据自己的机器架构选择版本，通常选择AMD64版本，
 
-7. 启动go-cqhttp，选择反向 Websocket 通信，然后到生成的config.yml中修改配置：
+8. 启动go-cqhttp，选择反向 Websocket 通信，然后到生成的config.yml中修改配置：
     拉到最底下，将`servers:`下的内容替换为以下内容
     ```yaml
     servers:
@@ -140,7 +139,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
     
     > 关于go-cqhttp的配置，你可以在[这里](https://docs.go-cqhttp.org/guide/config.html#%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF)找到更多说明。
 
-8. 启动go-cqhttp，按照提示登录。
+9. 启动go-cqhttp，按照提示登录。
 
     登陆成功后，私聊机器人发送`在？`，若机器人有回复，恭喜您，您已经成功搭建起HoshinoBot了！
 
@@ -154,17 +153,20 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 > CentOS已停止更新，推荐使用Ubuntu 20.04或Debian。
 
-1. 安装 Python 3.8
+1. 安装 Python 3.8和工具
 
     ```bash
     # Ubuntu or Debian
     sudo apt install python3.8
+    sudo apt install unzip
+    sudo apt install git
     ```
 
-2. 克隆本仓库并安装依赖包
+2. 下载整合包并安装依赖包
     ```bash
-    git clone https://github.com/Ice9Coffee/HoshinoBot.git
-    cd HoshinoBot
+    wget https://github.com/Cosmos01/HoshinoBot_Blue/releases/download/release/HoshinoBot_Blue.zip
+    unzip HoshinoBot_Blue.zip
+    cd HoshinoBot_Blue
     python3.8 -m pip install -r requirements.txt
     ```
 
@@ -176,20 +178,26 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
     >
     > 您也可以使用`vim`编辑器，若您从未使用过，我推荐您使用 `nano` : )
 
-4. 运行HoshinoBot
+4. 更新版本
+   ```bash
+   cd hoshino/modules/Blue_Archive_HoshinoBot
+   git pull
+   ```
+
+5. 运行HoshinoBot
     ```bash
     python3.8 run.py
     ```
 
     > 你需要在tmux或screen中运行。
 
-5. 下载 go-cqhttp 至合适的文件夹
+6. 下载 go-cqhttp 至合适的文件夹
 
     - github 发布页：https://github.com/Mrs4s/go-cqhttp/releases
 
     > 您需要根据自己的机器架构选择版本，一般x86/64的Linux选择[go-cqhttp_linux_386.tar.gz](https://github.com/Mrs4s/go-cqhttp/releases/download/v1.0.0-rc1/go-cqhttp_linux_386.tar.gz)
 
-6. 启动go-cqhttp，选择反向 Websocket 通信，然后到生成的config.yml中修改配置：
+7. 启动go-cqhttp，选择反向 Websocket 通信，然后到生成的config.yml中修改配置：
     拉到最底下，将`servers:`下的内容替换为以下内容
 
     ```yaml
@@ -205,7 +213,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
     > 关于go-cqhttp的配置，你可以在[这里](https://docs.go-cqhttp.org/guide/config.html#%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF)找到更多说明。
 
-7. 运行`go-cqhttp`，按照提示登录。
+8. 运行`go-cqhttp`，按照提示登录。
 
     登陆成功后，私聊机器人发送`在？`，若机器人有回复，恭喜您！您已经成功搭建起HoshinoBot了。之后您可以尝试在群内发送`!帮助`以查看会战管理的相关说明，发送`help`查看其他一般功能的相关说明，发送`pcr速查`查看常用网址等。
 
