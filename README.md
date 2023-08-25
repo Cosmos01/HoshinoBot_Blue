@@ -85,7 +85,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 - 项目地址：https://github.com/fuqiuluo/unidbg-fetch-qsign
 - 协议文件(选择对应版本下载)：https://github.com/MrXiaoM/qsign/tree/mirai/txlib
-- `config.yml`中的对应配置：
+- `config.yml`中添加对应配置：
   ```
   sign-server: 'http://127.0.0.1:xxxx' #服务地址
   key: 114514 #服务key默认114514,可为空
@@ -93,7 +93,8 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
   auto-refresh-token: true
   refresh-interval: 30
   ```
-
+    
+  
 ### 部署步骤
 
 #### Windows 部署
@@ -155,9 +156,11 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
     > 关于go-cqhttp的配置，你可以在[这里](https://docs.go-cqhttp.org/guide/config.html#%E9%85%8D%E7%BD%AE%E4%BF%A1%E6%81%AF)找到更多说明。
 
 9. 启动go-cqhttp，按照提示登录。
-
+    
     登陆成功后，私聊机器人发送`在？`，若机器人有回复，恭喜您，您已经成功搭建起HoshinoBot了！
-
+   
+    如果登录出问题，看看配置[sign-server](https://github.com/Cosmos01/HoshinoBot_Blue/blob/master/README.md#go-cqhttp%E7%9A%84%E9%97%AE%E9%A2%98)能不能解决
+   
     之后您可以尝试在群内发送`!帮助`以查看会战管理的相关说明，发送`help`查看其他一般功能的相关说明，发送`pcr速查`查看常用网址等。
     
     注意，此时您的机器人功能还不完全，部分功能可能无法正常工作。若希望您的机器人可以发送图片，或使用其他进阶功能，请参考本章**更进一步**的对应小节。
@@ -231,7 +234,11 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 8. 运行`go-cqhttp`，按照提示登录。
 
-    登陆成功后，私聊机器人发送`在？`，若机器人有回复，恭喜您！您已经成功搭建起HoshinoBot了。之后您可以尝试在群内发送`!帮助`以查看会战管理的相关说明，发送`help`查看其他一般功能的相关说明，发送`pcr速查`查看常用网址等。
+    登陆成功后，私聊机器人发送`在？`，若机器人有回复，恭喜您！您已经成功搭建起HoshinoBot了。
+
+    如果登录出问题，看看配置[sign-server](https://github.com/Cosmos01/HoshinoBot_Blue/blob/master/README.md#go-cqhttp%E7%9A%84%E9%97%AE%E9%A2%98)能不能解决
+   
+    之后您可以尝试在群内发送`!帮助`以查看会战管理的相关说明，发送`help`查看其他一般功能的相关说明，发送`pcr速查`查看常用网址等。
 
     注意，此时您的机器人功能还不完全，部分功能可能无法正常工作。若希望您的机器人可以发送图片，或使用其他进阶功能，请参考本章**更进一步**的对应小节。
 
