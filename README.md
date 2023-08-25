@@ -81,20 +81,22 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 部署go-cqhttp会遇到代码45、风控无法发消息、版本过低无法登录等情况，需要配置sign-server和升级协议版本来解决。请自行阅读并配置。    
 只支持安卓手机和平板协议，手机协议id是1，平板是6，协议文件名和配置都要修改。     
-比如下载`android_pad.json`要改名为`6.json`放在`data\versions`下，并且需要修改`device.json`中的`protocol`为6(默认就是6)。选择安卓手机协议同理。  
+比如下载`android_pad.json`要改名为`6.json`放在`data\versions`下，并且需要修改`device.json`中的`protocol`为6(默认就是6)。选择安卓手机协议同理。 
 
-- 项目地址：https://github.com/fuqiuluo/unidbg-fetch-qsign
+`sign-server`和`key`参数可修改
+
+- 项目地址(部署方式见项目)：https://github.com/fuqiuluo/unidbg-fetch-qsign
 - 协议文件(选择对应版本下载)：https://github.com/MrXiaoM/qsign/tree/mirai/txlib
 - `config.yml`中添加对应配置：
   ```
-  sign-server: 'http://127.0.0.1:xxxx' #服务地址
-  key: 114514 #服务key默认114514,可为空
+  sign-server: 'http://127.0.0.1:xxxx' #服务地址，端口在txlib下对应版本的config.json中
+  key: 114514 #默认114514,可为空,在txlib下对应版本的config.json中
   auto-register: true
   auto-refresh-token: true
   refresh-interval: 30
   ```
     
-  
+<br>  
 ### 部署步骤
 
 #### Windows 部署
@@ -166,7 +168,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
     注意，此时您的机器人功能还不完全，部分功能可能无法正常工作。若希望您的机器人可以发送图片，或使用其他进阶功能，请参考本章**更进一步**的对应小节。
 
 
-
+<br>
 #### Linux 部署
 
 > CentOS已停止更新，推荐使用Ubuntu 20.04或Debian。
