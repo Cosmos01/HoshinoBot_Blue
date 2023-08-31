@@ -88,11 +88,13 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 - 协议文件(选择对应版本下载)：https://github.com/MrXiaoM/qsign/tree/mirai/txlib
 - `config.yml`中添加对应配置：
   ```
-  sign-server: 'http://127.0.0.1:xxxx' #服务地址，端口在txlib下对应版本的config.json中
-  key: 114514 #默认114514,可为空,在txlib下对应版本的config.json中
-  auto-register: true
+  sign-servers: 
+    - url: 'http://127.0.0.1:xxxx' #服务地址，端口在txlib下对应版本的config.json中
+      key: '114514'   #默认114514,可为空,在txlib下对应版本的config.json中
+      authorization: '-'
+  auto-register: false
   auto-refresh-token: true
-  refresh-interval: 30
+  refresh-interval: 40
   ```
     
 <br>  
