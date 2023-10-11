@@ -110,7 +110,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 
 2. 下载整合包：https://github.com/Cosmos01/HoshinoBot_Blue/releases/download/release/HoshinoBot_Blue.zip
 
-3. 解压后进入HoshinoBot_Blue，点击资源管理器左上角的 `文件 -> 打开Windows Powershell`，输入以下命令克隆本仓库并安装依赖
+3. 解压后进入HoshinoBot_Blue，点击资源管理器左上角的 `文件 -> 打开Windows Powershell`，输入以下命令安装依赖
     ```powershell
     py -3.8 -m pip install -i https://pypi.tuna.tsinghua.edu.cn/simple -r requirements.txt`
     ```
