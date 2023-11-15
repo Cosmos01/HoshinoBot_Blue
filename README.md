@@ -86,7 +86,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
 只支持安卓手机和平板协议，手机协议id是1，平板是6，协议文件名和配置都要修改。     
 比如下载`android_pad.json`要改名为`6.json`放在`data\versions`下，并且需要修改`device.json`中的`protocol`为6(默认就是6)。选择安卓手机协议同理。 
 
-- 项目地址(部署方式见项目)：https://github.com/fuqiuluo/unidbg-fetch-qsign
+- 项目地址(部署方式见项目)：github找unidbg-fetch-qsign
 - 协议文件(选择对应版本下载)：https://github.com/MrXiaoM/qsign/tree/mirai/txlib
 - `config.yml`中添加对应配置：
   ```
