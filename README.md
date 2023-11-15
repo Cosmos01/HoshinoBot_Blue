@@ -98,6 +98,7 @@ HoshinoBot 的功能繁多，各群可根据自己的需要进行开关控制，
   auto-refresh-token: true
   refresh-interval: 40
   ```
+目前还是能用的(我用的8.9.85)，后续如果不能用了迁移见[这里](https://github.com/Mrs4s/go-cqhttp/issues/2471)(没有具体地址，自己进去找关键词GitHub搜索吧)
     
 <br>  
 
