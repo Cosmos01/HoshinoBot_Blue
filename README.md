@@ -12,6 +12,7 @@ A QQ-bot for Blue Archive based on [Nonebot](https://github.com/nonebot/nonebot)
 不要clone本项目，移步[Release](https://github.com/Cosmos01/HoshinoBot_Blue/releases/tag/release)下载整合包  
   
 本项目不提供go-cqhttp的技术支持，只列出一些步骤避免踩坑，遇到问题请自行解决  
+如使用shamrock等非本机qq端导致无法发送图片，请修改`hoshino/config/__bot__.py`中的RES_PROTOCOL为base64
 
 ## 简介
 
